@@ -66,14 +66,28 @@
   @extend %styles-for-modal-window-components;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:focus ~ .modal-ic {
-    fill: $accent-color;
-  }
   &:focus,
   &:not(:placeholder-shown) {
     @extend %styles-for-modal-window-input;
   }
+  &:focus ~ .modal-ic {
+    fill: $accent-color;
+  }
+  &:focus + .modal-form-lable {
+    @extend %modal-lable-form-transform;
+  }
+  &:not(:placeholder-shown) + .modal-form-lable {
+    @extend %modal-lable-form-transform;
+  }
+}
+
+.modal-form-input:focus + .modal-form-lable,
+.modal-form-input:not(:placeholder-shown) + .modal-form-lable {
+  transform: translate(-24px, -42px);
+  color: $accent-color;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-input-wrapper {
@@ -92,14 +106,6 @@
   line-height: 1.14;
   letter-spacing: 0.01em;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  // &:focus,
-  // &:not(:placeholder-shown) {
-  //   transform: translate(-24px, -42px);
-  //   color: $accent-color;
-  //   font-size: 12px;
-  //   line-height: 1.16;
-  //   letter-spacing: 0.01em;
-  // }
 }
 
 .modal-form-optional-label {

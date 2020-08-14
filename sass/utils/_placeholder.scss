@@ -18,3 +18,10 @@
   outline: none;
   border-color: $accent-color;
 }
+%modal-lable-form-transform {
+  transform: translate(-24px, -42px);
+  color: $accent-color;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
