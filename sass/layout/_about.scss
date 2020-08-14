@@ -1,0 +1,59 @@
+/*О НАС*/
+
+.about-us {
+  display: flex;
+  padding-top: 94px;
+}
+
+.thumb {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.icon {
+  margin: auto;
+  width: 65px;
+  height: 70px;
+}
+.about-us-item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-us-list {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-title-color;
+  margin-bottom: 10px;
+}
+
+.about-us-list-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.secondary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-title-color;
+  padding-top: 94px;
+  margin: 0;
+  margin-bottom: 50px;
+}
